@@ -309,9 +309,9 @@ function display(item,wraper,rowspage,page) {
         users.map(item =>{
             if(userid===item.id){
                 email.innerText=item.username
-                
+                const username1 = item.username
 
-            };let username1 = item.username
+            };
         })
         div.appendChild(title);
         div.appendChild(email)
@@ -325,7 +325,7 @@ function display(item,wraper,rowspage,page) {
             
             h1.innerText=postelement.title;
             let h3 = document.createElement("h3");
-            h3.innerText="lavish";
+            h3.innerText=email.innerHTML;
             let div2 = document.createElement("div");
             div2.classList.add("cbody");
             let h32 = document.createElement("h3");
